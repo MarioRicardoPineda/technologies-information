@@ -1,0 +1,38 @@
+{
+  "name": "tech-info",
+  "version": "1.0.0",
+  "description": "Web sobre información de tecnologías de desarrollo de software creado con MEAN-Stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index",
+    "seed": "node ./seeds/technologies.seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarioRicardoPineda/technologies-information.git"
+  },
+  "keywords": [
+    "angular",
+    "nodejs",
+    "mongodb",
+    "express",
+    "MEAN",
+    "Stack"
+  ],
+  "author": "Ricardo Pineda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarioRicardoPineda/technologies-information/issues"
+  },
+  "homepage": "https://github.com/MarioRicardoPineda/technologies-information#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.16"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
