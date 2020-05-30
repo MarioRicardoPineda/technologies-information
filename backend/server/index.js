@@ -43,8 +43,10 @@ server.get('/api/technologies/search/:name', async ( req, res ) => {
   let technologies = await Technology.find({
     name: { $regex: new RegExp(name, 'i') } 
   })
+
   // Se hace un map para poder concatener la ruta de la imagen (logo), 
   // de caso contrario, el servidor no sabria encontrarla
+  
   technologies = technologies.map( technology => {
     technology.logo = `${ req.protocol }://${ req.headers.host }/img/${ technology.logo }`
 
